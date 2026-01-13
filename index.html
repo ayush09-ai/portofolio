@@ -158,6 +158,10 @@
                 width: 200px;
                 margin-bottom: 20px;
             }
+            html {
+                scroll-behavior: smooth;
+            }
+
         }
     </style>
 </head>
@@ -168,16 +172,16 @@
     <header>
         <h2>MyPortfolio</h2>
         <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Skills</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
     <!-- Hero Section -->
-    <div class="hero">
+    <div class="hero" id="home">
         <div class="hero-text">
             <h1>Hello, I'm <span>Ayush Kumar Singh</span></h1>
             <p>Aspiring Web Developer | HTML, CSS, GitHub</p>
@@ -187,27 +191,28 @@
     </div>
 
     <!-- About -->
-    <section>
-        <h2>About Me</h2>
-        <p>
-            I am a passionate Web Developer learning Frontend development with HTML, CSS, and GitHub.
-            I enjoy creating clean and responsive websites and improving my skills every day.
-        </p>
-    </section>
+    <section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a passionate Web Developer learning Frontend development with HTML, CSS, and GitHub.
+    </p>
+</section>
+
 
     <!-- Skills -->
-    <section>
-        <h2>My Skills</h2>
-        <div class="skills">
-            <div class="skill-box">HTML</div>
-            <div class="skill-box">CSS</div>
-            <div class="skill-box">Responsive Design</div>
-            <div class="skill-box">Git & GitHub</div>
-        </div>
-    </section>
+    <section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills">
+        <div class="skill-box">HTML</div>
+        <div class="skill-box">CSS</div>
+        <div class="skill-box">Responsive Design</div>
+        <div class="skill-box">Git & GitHub</div>
+    </div>
+</section>
+
 
     <!-- Projects -->
-    <section>
+    <section id="projects">
         <h2>Projects</h2>
         <div class="projects">
             <div class="project-card">
@@ -226,7 +231,7 @@
     </section>
 
     <!-- Contact -->
-    <section>
+    <section id="contact">
         <h2>Contact Me</h2>
         <form class="contact-form">
             <label>Full Name</label>
