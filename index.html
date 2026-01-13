@@ -143,6 +143,20 @@
             font-size: 14px;
         }
 
+html {
+    scroll-behavior: smooth;
+}
+
+.hero a img {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero a img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
         @media (max-width: 768px) {
             header {
                 flex-direction: column;
@@ -158,9 +172,8 @@
                 width: 200px;
                 margin-bottom: 20px;
             }
-            html {
-                scroll-behavior: smooth;
-            }
+        
+            
 
         }
     </style>
@@ -187,7 +200,10 @@
             <p>Aspiring Web Developer | HTML, CSS, GitHub</p>
             <button>Hire Me</button>
         </div>
-        <img src="image.png" alt="Profile Image">
+        <a href="https://github.com/ayush09-ai" target="_blank">
+    <img src="image.png" alt="Profile Image">
+</a>
+
     </div>
 
     <!-- About -->
